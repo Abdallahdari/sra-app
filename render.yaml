@@ -1,0 +1,24 @@
+# Render Blueprint: deploys the API on Render's free plan.
+# Render → New → Blueprint → pick this repo. Fill in the secret values when asked.
+services:
+  - type: web
+    name: sra-api
+    runtime: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm ci --omit=dev
+    startCommand: node src/server.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "22"
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_TTL
+        value: 7d
+      - key: MONGODB_URI
+        sync: false # paste your MongoDB Atlas connection string
+      - key: DNS_SERVERS
+        value: 1.1.1.1,8.8.8.8

@@ -1,0 +1,44 @@
+[
+ {
+  "id": 29,
+  "count": 36,
+  "name": "Economy",
+  "slug": "economy"
+ },
+ {
+  "id": 30,
+  "count": 16,
+  "name": "Education",
+  "slug": "education"
+ },
+ {
+  "id": 31,
+  "count": 14,
+  "name": "Health",
+  "slug": "health"
+ },
+ {
+  "id": 193,
+  "count": 7,
+  "name": "Policy Impact",
+  "slug": "policy-impact"
+ },
+ {
+  "id": 18,
+  "count": 18,
+  "name": "Politics",
+  "slug": "politics"
+ },
+ {
+  "id": 24,
+  "count": 29,
+  "name": "Prices",
+  "slug": "prices"
+ },
+ {
+  "id": 1,
+  "count": 1,
+  "name": "Uncategorized",
+  "slug": "uncategorized"
+ }
+]

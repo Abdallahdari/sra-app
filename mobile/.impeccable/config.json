@@ -1,0 +1,35 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "broken-image",
+        "value": "*",
+        "files": [
+          "src/app/admin/[type].tsx"
+        ],
+        "createdAt": "2026-11-17T15:27:30.642Z",
+        "reason": "Claude: <Img uri={...}> is the app's expo-image wrapper with a dynamic API URL and blurhash placeholder, not an <img> tag with an empty src"
+      },
+      {
+        "rule": "broken-image",
+        "value": "*",
+        "files": [
+          "src/app/admin/index.tsx"
+        ],
+        "createdAt": "2026-11-17T15:27:30.927Z",
+        "reason": "Claude: <Img uri={...}> is the app's expo-image wrapper with a dynamic API URL and blurhash placeholder, not an <img> tag with an empty src"
+      },
+      {
+        "rule": "broken-image",
+        "value": "*",
+        "files": [
+          "src/app/item/[id].tsx"
+        ],
+        "createdAt": "2026-11-17T15:27:31.247Z",
+        "reason": "Claude: <Img uri={...}> is the app's expo-image wrapper with a dynamic API URL and blurhash placeholder, not an <img> tag with an empty src"
+      }
+    ]
+  }
+}

@@ -43,7 +43,7 @@ You need Node.js 20 or newer.
 # 1. Backend
 cd backend
 npm install
-cp .env.example .env          # then fill in JWT_SECRET, ADMIN_EMAIL, ADMIN_PASSWORD
+# create backend/.env with PORT, MONGODB_URI, JWT_SECRET, ADMIN_EMAIL, ADMIN_PASSWORD
 npm run db                    # terminal 1: local MongoDB (data kept in backend/data/db)
 npm run fetch:wp              # downloads sra.so content into data/raw (slow: the WordPress API is slow)
 npm run import                # loads it into MongoDB and downloads images

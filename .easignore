@@ -1,0 +1,21 @@
+# Files EAS Build should not upload (replaces .gitignore for EAS).
+# The mobile build only needs mobile/.
+backend/
+**/node_modules/
+**/.env
+**/.env*.local
+mobile/.expo/
+mobile/dist/
+mobile/web-build/
+mobile/ios/
+mobile/android/
+mobile/.claude/
+mobile/.impeccable/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.pem
+*.log
+.DS_Store

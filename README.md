@@ -77,3 +77,7 @@ cd mobile && npx tsc --noEmit && npx expo lint && npx expo-doctor
    npx eas-cli@latest submit
    ```
 4. Publishing under the SRA name and branding in the App Store and Google Play needs SRA's permission and their developer accounts.
+
+## Credits
+
+Designed and developed by **Abdallah Abdirisaq**, Full Stack Software Engineer. Portfolio: [dheere.dev](https://dheere.dev/)

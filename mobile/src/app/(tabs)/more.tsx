@@ -78,6 +78,13 @@ export default function More() {
             : { icon: 'lock-closed-outline', label: 'Admin sign in', sub: 'Post research, events and updates', href: '/admin/login' },
         ]}
       />
+      <Group
+        title="Credits"
+        rows={[
+          { icon: 'code-slash-outline', label: 'Built by Abdallah Abdirisaq', sub: 'Full Stack Software Engineer · dheere.dev', url: 'https://dheere.dev/' },
+        ]}
+      />
+      <Text style={styles.footer}>Designed & developed by Abdallah Abdirisaq</Text>
     </ScrollView>
   );
 }
@@ -89,4 +96,5 @@ const styles = StyleSheet.create({
   iconBox: { width: 36, height: 36, borderRadius: 10, backgroundColor: C.tint, alignItems: 'center', justifyContent: 'center' },
   label: { fontFamily: F.bold, fontSize: 15, color: C.text },
   sub: { fontFamily: F.regular, fontSize: 13, color: C.muted, marginTop: 1 },
+  footer: { fontFamily: F.regular, fontSize: 12, color: C.muted, textAlign: 'center', marginTop: 24 },
 });

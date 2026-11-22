@@ -3,6 +3,7 @@ import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Markdown } from '@/components/markdown';
 import { DetailSkeleton } from '@/components/skeleton';
 import { Button, ErrorState, T } from '@/components/ui';
+import { DevCredit } from '@/components/credit';
 import { C, F, R, S } from '@/constants/theme';
 import { useSettings } from '@/lib/queries';
 
@@ -32,6 +33,7 @@ export default function About() {
         <Button label="Meet our researchers" href="/list/researcher" icon="people" />
         <Button label="Contact" variant="outline" href="/contact" />
       </View>
+      <DevCredit />
     </ScrollView>
   );
 }

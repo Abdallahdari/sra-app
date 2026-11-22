@@ -13,6 +13,7 @@ import { DefaultTheme, Stack, ThemeProvider } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
+import { LaunchCredit } from '@/components/credit';
 import { C, F } from '@/constants/theme';
 import { AuthProvider } from '@/lib/auth';
 import { queryClient } from '@/lib/queries';
@@ -75,6 +76,7 @@ export default function RootLayout() {
             <Stack.Screen name="admin/edit" options={{ title: '', presentation: 'modal' }} />
             <Stack.Screen name="admin/settings" options={{ title: 'Site settings' }} />
           </Stack>
+          <LaunchCredit />
         </ThemeProvider>
       </AuthProvider>
     </PersistQueryClientProvider>
